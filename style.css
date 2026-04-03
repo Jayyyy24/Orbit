@@ -590,11 +590,33 @@ input:checked + .slider:before { transform: translateX(20px); }
     
     .mobile-menu-btn {
         display: flex !important;
+        order: 1;
+    }
+    
+    .mobile-logo {
+        display: flex !important;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-main);
+        order: 2;
+        margin-right: auto;
+    }
+
+    .header-actions {
+        order: 3;
+    }
+    
+    .header-titles {
+        order: 4;
+        width: 100%;
+        margin-top: 0.5rem;
     }
     
     .top-header {
         padding: var(--p-md) 0;
-        flex-wrap: wrap; /* allows layout shift if needed */
+        flex-wrap: wrap;
         gap: 1rem;
     }
     
@@ -604,7 +626,10 @@ input:checked + .slider:before { transform: translateX(20px); }
     
     /* hide the 'Add Expense' text on mobile button */
     #quick-add-btn {
-        padding: 0.6rem;
+        padding: 0.6rem 0.8rem;
+    }
+    #quick-add-btn span {
+        display: none;
     }
     
     /* Stack metrics */

@@ -12,7 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js">  </script>
 </head>
 
 <body class="dark-mode">
@@ -47,21 +47,24 @@
         <main class="main-content">
             <!-- Header -->
             <header class="top-header">
-                <div style="display: flex; align-items: center; gap: 1rem;">
-                    <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" style="display: none;"><i
-                            class="fa-solid fa-bars"></i></button>
-                    <div>
-                        <h1 id="page-title">Dashboard Overview</h1>
-                        <p class="subtitle" id="page-subtitle">Welcome, let's track your finances.</p>
-                    </div>
+                <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" style="display: none;"><i
+                        class="fa-solid fa-bars"></i></button>
+                <!-- Mobile Logo -->
+                <div class="mobile-logo" style="display: none;">
+                    <i class="fa-solid fa-planet-ringed" style="color: var(--primary);"></i>
+                    <span>Orbit</span>
+                </div>
+                
+                <div class="header-titles">
+                    <h1 id="page-title">Dashboard Overview</h1>
+                    <p class="subtitle" id="page-subtitle">Welcome, let's track your finances.</p>
                 </div>
                 <div class="header-actions">
                     <button class="icon-btn" id="theme-toggle" title="Toggle Theme"><i
                             class="fa-regular fa-moon"></i></button>
                     <button class="icon-btn" title="Notifications"><i class="fa-regular fa-bell"></i><span class="badge"
                             style="display:none;" id="nav-badge">0</span></button>
-                    <button class="btn primary-btn pulse-btn" id="quick-add-btn"><i class="fa-solid fa-plus"></i> Add
-                        Expense</button>
+                    <button class="btn primary-btn pulse-btn" id="quick-add-btn"><i class="fa-solid fa-plus"></i> <span>Add Expense</span></button>
                 </div>
             </header>
 
